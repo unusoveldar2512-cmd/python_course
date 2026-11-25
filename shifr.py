@@ -14,3 +14,6 @@ for char in message:
     enrcypt+=alf[(alf.find(char)+alf.find(str_key[i]))%len(alf)]
     i+=1
 print(enrcypt)
+chast=[enrcypt.count(c) for c in alf]
+print(chast)
+print (max(chast),min(chast))
